@@ -11,14 +11,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- font awesome from BootstrapCDN -->
-        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
-        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-
-        <script src="auth0-variables.js"> </script>
-        <script src="app.js"> </script>
-        <link href="app.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrapFont-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="lib/ratchet/ratchet.css">
+        <link rel="stylesheet" type="text/css" href="lib/ratchet/ratchet-theme-ios.css">
+		
+        <link rel="stylesheet" type="text/css" href="css/app.css" />
     </head>
     <body class="home">
+		<header class="bar bar-nav">
+			<h1 class="title">Auth0 Sample</h1>
+		</header>
         <div class="container">
             <div class="login-page clearfix">
               <div class="login-box auth0-box before">
@@ -32,8 +35,15 @@
                 <img class="avatar"/>
                 <h2>Welcome <span class="nickname"></span></h2>
                 <button class="btn btn-lg btn-primary btn-api">Call API</button>
+				<button class="btn btn-lg btn-primary btn-api">Log Out</button>
               </div>
             </div>
         </div>
+		
+		<!-- Auth0 widget script -->
+        <script src="lib/lock-6.js"></script>
+        <script type="text/javascript" src="js/auth0-variables.js"></script>
+        <script type="text/javascript" src="js/app.js"></script>
+		
     </body>
 </html>
